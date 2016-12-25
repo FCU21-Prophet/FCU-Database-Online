@@ -38,11 +38,11 @@
     </style>
     @yield('css')
 </head>
-<body>
+<body style="background: url(http://i.imgur.com/mRZrhTXh.jpg) fixed center !important;">
 {{-- Navbar --}}
 @include('navbar.menu')
 
-<div class="pusher">
+<div class="pusher" style="background: transparent">
     {{-- Content --}}
     <div class="ui container" style="margin-top: 70px;">
         @yield('content')

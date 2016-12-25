@@ -20,7 +20,7 @@
                 <i class="circular inverted red massive marker icon"></i>
                 {{ config('site.name') }}
                 <p class="ui sub header">
-                    逢甲大學黑客社
+                    逢甲首家線上資料庫上線啦
                 </p>
             </h1>
             <a href="javascript:void(0)" class="ui large inverted red center aligned button" style="margin-top: 5vh;">GO!</a>
