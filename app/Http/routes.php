@@ -68,3 +68,6 @@ Route::group(['namespace' => 'Auth'], function () {
 Route::get('/', function () {
     return view('index');
 })->name('index');
+
+//Video
+Route::get('/video', 'VideoController@index');
