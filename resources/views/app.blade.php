@@ -15,6 +15,7 @@
     <style>
         body {
             height: auto;
+            background-size: cover;
         }
 
         .secondary.pointing.menu {
@@ -38,7 +39,7 @@
     </style>
     @yield('css')
 </head>
-<body style="background: url(http://i.imgur.com/mRZrhTXh.jpg) fixed center !important;">
+<body style="background: url(http://i.imgur.com/aCwaloX.jpg) no-repeat center center fixed !important;">
 {{-- Navbar --}}
 @include('navbar.menu')
 
