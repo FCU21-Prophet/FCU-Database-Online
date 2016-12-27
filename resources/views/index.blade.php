@@ -17,7 +17,7 @@
     <div class="jumbotron">
         <div class="ui translucent vertical center aligned segment">
             <h1 class="ui inverted center aligned icon header">
-                <i class="circular inverted red massive marker icon"></i>
+                <i class="circular inverted red massive film icon"></i>
                 {{ config('site.name') }}
                 <p class="ui sub header">
                     逢甲首家線上資料庫上線啦
