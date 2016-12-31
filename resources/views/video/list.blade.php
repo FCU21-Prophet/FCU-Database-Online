@@ -27,7 +27,8 @@
         @foreach($videos as $video)
             <tr>
                 <td>
-                    <button class="ui button">
+                    {{--$url = route('routeName', ['id' => 1]);--}}
+                    <button class="ui button" onclick= self.location.href="{{ route('videoDetail', ['id' => $video['id']]) }}">
                         {{ $video['name'] }}
                     </button>
                 </td>

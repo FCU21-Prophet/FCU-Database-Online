@@ -71,4 +71,4 @@ Route::get('/', function () {
 
 //Video
 Route::get('/video', 'VideoController@index')->name('video');
-Route::get('video/{id}', 'VideoController@show');
+Route::get('/video/{id}', 'VideoController@show')->name('videoDetail');
