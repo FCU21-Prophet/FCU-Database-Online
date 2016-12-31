@@ -12,6 +12,6 @@ class VideoController extends Controller
     //
     public function index()
     {
-        return Video::all();
+        return view('video.list');
     }
 }
