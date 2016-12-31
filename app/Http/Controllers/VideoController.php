@@ -15,4 +15,12 @@ class VideoController extends Controller
         $videos = Video::all();
         return view('video.list', compact('videos'));
     }
+    public function show($id)
+    {
+        $output = Video::findOrFail($id);
+        // https://www.youtube.com/embed/nDtj-2qnTXk
+        $strTemp = substr($output['url'] , 32 - strlen($output['url']) );
+        $output['url'] = "https://www.youtube.com/embed/".$strTemp;
+        return view('video.index', ['video' =>  $output]);
+    }
 }
