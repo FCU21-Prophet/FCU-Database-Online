@@ -8,19 +8,29 @@
 @section('content')
     {{--{{$video}}--}}
 
+    <div class="ui action input">
+        <input type="text" placeholder="搜尋片片...">
+        <button class="ui button">搜尋</button>
+    </div>
+
     <table class="ui celled table">
+
         <thead>
         <tr>
             <th>片名</th>
             <th>國家</th>
-            <th>片長</th>
+            <th>片長(秒)</th>
         </tr>
         </thead>
         <tbody>
 
         @foreach($videos as $video)
             <tr>
-                <td>{{ $video['name'] }}</td>
+                <td>
+                    <button class="ui button">
+                        {{ $video['name'] }}
+                    </button>
+                </td>
                 <td>{{ $video['country'] }}</td>
                 <td>{{ $video['running_time'] }}</td>
             </tr>
@@ -29,5 +39,13 @@
         </tbody>
 
     </table>
+
+    <div class="ui right aligned grid">
+        <div class="right floated left aligned two wide column">
+            <button class="ui button">加入</button>
+        </div>
+    </div>
+    <br>
+    <br>
 
 @endsection
