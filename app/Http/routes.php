@@ -70,4 +70,4 @@ Route::get('/', function () {
 })->name('index');
 
 //Video
-Route::get('/video', 'VideoController@index');
+Route::get('/video', 'VideoController@index')->name('video');
