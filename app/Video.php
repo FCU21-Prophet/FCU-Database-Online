@@ -15,5 +15,7 @@ class Video extends Model
         'running_time',
         'genre',
         'country',
+        'url',
+        'introduction'
     ];
 }
