@@ -8,7 +8,10 @@
 @section('content')
 {{--{{$video}}--}}
 
-<table class="ui celled table">
+<button class="ui button">修改</button>
+<button class="ui button">刪除</button>
+
+<table class="ui celled table"  style="word-break: break-all">
     <tbody>
     <tr>
         <td>片名: {{ $video['name'] }}</td>
@@ -23,11 +26,13 @@
         <td>URL: {{ $video['url'] }}</td>
     </tr>
     <tr>
+        <td>簡介: {{ $video['introduction'] }}</td>
+    </tr>
+    <tr>
         <td>
             <iframe width="560" height="315" src="{{ $video['url'] }}" frameborder="0" allowfullscreen></iframe>
         </td>
     </tr>
-    </tbody>
 
 </table>
 
