@@ -23,4 +23,14 @@ class VideoController extends Controller
         $output['url'] = "https://www.youtube.com/embed/".$strTemp;
         return view('video.index', ['video' =>  $output]);
     }
+
+    public function create()
+    {
+        return view('video.create');
+    }
+
+    public function store()
+    {
+        //
+    }
 }

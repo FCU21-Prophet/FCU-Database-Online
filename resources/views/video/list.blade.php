@@ -43,7 +43,9 @@
 
     <div class="ui right aligned grid">
         <div class="right floated left aligned two wide column">
-            <button class="ui button">加入</button>
+            <button class="ui button" onclick= self.location.href="{{route('videoCreate')}}">
+                加入
+            </button>
         </div>
     </div>
     <br>
