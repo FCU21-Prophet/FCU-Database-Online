@@ -31,6 +31,6 @@ class VideoController extends Controller
 
     public function store()
     {
-        //
+        dd("hello world");
     }
 }

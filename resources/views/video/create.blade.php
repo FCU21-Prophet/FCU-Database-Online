@@ -7,60 +7,34 @@
 @endsection
 @section('content')
 
-    <table class="ui celled table">
-
-        <thead>
-        <tr>
-            <th>片名</th>
-            <td>
-                <div class="ui action input">
-                    <input type="text" placeholder="片片名稱...?" size=40>
-                </div>
-            </td>
-        </tr>
-
-        <tr>
-            <th>國家</th>
-            <td>
-                <div class="ui action input">
-                    <input type="text" placeholder="國家名稱...?" size=40>
-                </div>
-            </td>
-        </tr>
-
-        <tr>
-            <th>片長(秒)</th>
-            <td>
-                <div class="ui action input">
-                    <input type="text" placeholder="片長多久...?" size=40>
-                </div>
-            </td>
-        </tr>
-
-        <tr>
-            <th>URL (youtube only)</th>
-            <td>
-                <div class="ui action input">
-                    <input type="text" size=100>
-                </div>
-            </td>
-        </tr>
-
-        <tr>
-            <th>簡介</th>
-            <td>
-                <div class="ui action input">
-                    <input type="text" placeholder="這片片在講什麼...?" size=100>
-                </div>
-            </td>
-        </tr>
-        </thead>
-    </table>
-
-    <div class="ui right aligned grid">
-        <div class="right floated left aligned two wide column">
-            <button class="ui button">提交</button>
+    <form class="ui form" action="{{route('videoStore')}}" method="post">
+        {{ csrf_field() }}
+        <div class="field">
+            <label style="color: white">片名</label>
+            <input type="text" name="video_name" placeholder="片片名稱...?">
         </div>
-    </div>
-    
+
+        <div class="field">
+            <label style="color: white">國家</label>
+            <input type="text" name="country" placeholder="國家名稱...?">
+        </div>
+
+        <div class="field">
+            <label style="color: white">片長</label>
+            <input type="text" name="running_time" placeholder="片長多久...?">
+        </div>
+
+        <div class="field">
+            <label style="color: white">URL</label>
+            <input type="text" name="URL" placeholder="(youtube only)">
+        </div>
+
+        <div class="field">
+            <label style="color: white">簡介</label>
+            <input type="text" name="introduction" placeholder="片片在講啥...?">
+        </div>
+
+        <button class="ui button" type="submit">提交</button>
+    </form>
+
 @endsection
