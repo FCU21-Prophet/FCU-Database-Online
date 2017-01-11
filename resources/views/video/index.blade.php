@@ -8,7 +8,7 @@
 @section('content')
 {{--{{$video}}--}}
 
-<button class="ui button">修改</button>
+<button class="ui button" onclick= self.location.href="{{route('videoModify',$video['id'])}}">修改</button>
 <button class="ui button">刪除</button>
 
 <table class="ui celled table"  style="word-break: break-all">

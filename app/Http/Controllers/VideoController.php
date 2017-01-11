@@ -46,4 +46,9 @@ class VideoController extends Controller
 
         return Redirect::to('video');
     }
+    public function modify($id)
+    {
+        $output = Video::findOrFail($id);
+        return view('video.modify',['video' =>  $output]);
+    }
 }

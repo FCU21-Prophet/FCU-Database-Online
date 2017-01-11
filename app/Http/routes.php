@@ -73,6 +73,6 @@ Route::get('/', function () {
 Route::get('/video', 'VideoController@index')->name('video');
 Route::get('/video/create', 'VideoController@create')->name('videoCreate');
 Route::get('/video/{id}', 'VideoController@show')->name('videoDetail');
-
+Route::get('/video/{id}/modify', 'VideoController@modify')->name('videoModify');
 //POST	/nerds	store	nerds.store
 Route::post('/video', 'VideoController@store')->name('videoStore');
